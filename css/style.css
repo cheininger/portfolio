@@ -1,3 +1,9 @@
+root {
+  --clr-primary: #b9f5bd;
+  --clr-primary-accent: #3f7543;
+  --clr-secondary: #474747;
+}
+
 /* https://piccalil.li/blog/a-modern-css-reset */
 
 /* Box sizing rules */
@@ -67,4 +73,42 @@ svg {
 
 body {
   font-family: Verdana, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.primary-navigation > ul {
+  font-size: 1.5rem;
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  justify-content: right;
+  margin-right: 2rem;
+}
+
+section {
+  padding: 1rem;
+}
+
+.header-section {
+  padding-top: 4rem;
+  width: 100%;
+  background: var(--clr-primary-accent);
+}
+
+header {
+  padding: 1rem 1.5rem;
+  background: var(--clr-secondary);
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  /* top: 0; */
+  width: 100%;
 }
