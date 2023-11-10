@@ -1,7 +1,8 @@
-root {
-  --clr-primary: #b9f5bd;
-  --clr-primary-accent: #3f7543;
-  --clr-secondary: #474747;
+:root {
+  --clr-primary: #0c5446;
+  --clr-primary-accent: #dbd0bd;
+  --clr-secondary: #fcfaef;
+  --clr-tertiary: #ff6700;
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
@@ -71,8 +72,44 @@ svg {
   }
 }
 
+@font-face {
+  font-family: "Subjectivity";
+  src: url(../fonts/Subjectivity-Regular.otf);
+}
+
 body {
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family: "Josefin Sans", Verdana, Tahoma, sans-serif;
+}
+
+body a:link {
+  color: var(--clr-primary-accent);
+}
+
+body a:visited {
+  color: black;
+}
+
+main {
+  margin-top: 4rem;
+}
+
+#hero-section {
+  width: 100%;
+  background: var(--clr-primary-accent);
+}
+
+header {
+  padding: 1rem 1.5rem;
+  background: var(--clr-primary);
+  color: var(--clr-primary-accent);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Subjectivity", "Josefin Sans", Verdana, Tahoma, sans-serif;
 }
 
 h1 {
@@ -92,23 +129,27 @@ h2 {
   margin-right: 2rem;
 }
 
+li > a:visited {
+  color: var(--clr-primary-accent);
+}
+
 section {
   padding: 1rem;
 }
 
-.header-section {
-  padding-top: 4rem;
-  width: 100%;
-  background: var(--clr-primary-accent);
+#bio-section {
+  background-color: var(--clr-secondary);
 }
 
-header {
-  padding: 1rem 1.5rem;
-  background: var(--clr-secondary);
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 999;
-  /* top: 0; */
-  width: 100%;
+#main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--clr-tertiary);
+}
+
+.github-logo {
+  height: 2rem;
 }
