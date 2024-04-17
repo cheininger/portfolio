@@ -72,13 +72,8 @@ svg {
   }
 }
 
-@font-face {
-  font-family: "Subjectivity";
-  src: url(../fonts/Subjectivity-Regular.otf);
-}
-
 body {
-  font-family: "Josefin Sans", Verdana, Tahoma, sans-serif;
+  font-family: system-ui;
 }
 
 body a:link {
