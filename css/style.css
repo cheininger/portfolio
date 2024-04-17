@@ -30,7 +30,7 @@ ol[role="list"] {
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 html,
@@ -122,11 +122,12 @@ h2 {
   margin-right: 2rem;
 }
 
-section {
-  padding: 1rem;
+.primary-navigation > ul > li > a:hover {
+  color: var(--clr-primary-accent);
 }
 
-#bio-section {
+section {
+  padding: 1rem;
 }
 
 #main-footer {
