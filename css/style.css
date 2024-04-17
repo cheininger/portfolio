@@ -1,6 +1,7 @@
 :root {
-  --clr-primary: #101720;
-  --clr-primary-accent: #dbd0bd;
+  --clr-primary: #1B2636;
+  --clr-primary-shadow: #17212E;
+  --clr-primary-accent: #c5ee4f;
   --clr-secondary: #fcfaef;
 
 }
@@ -80,10 +81,11 @@ body {
 
 body a:link {
   color: var(--clr-secondary);
+  text-decoration: none;
 }
 
 body a:visited {
-  color: black;
+  color: var(--clr-secondary);
 }
 
 main {
@@ -99,6 +101,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: var(--clr-primary-shadow);
+  box-shadow: 0px 10px 18px 8px var(--clr-primary-shadow);
 }
 
 h1 {
@@ -110,16 +114,12 @@ h2 {
 }
 
 .primary-navigation > ul {
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   list-style: none;
   gap: 4rem;
   justify-content: right;
   margin-right: 2rem;
-}
-
-li > a:visited {
-  color: var(--clr-primary-accent);
 }
 
 section {
