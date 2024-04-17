@@ -1,8 +1,8 @@
 :root {
-  --clr-primary: #0c5446;
+  --clr-primary: #101720;
   --clr-primary-accent: #dbd0bd;
   --clr-secondary: #fcfaef;
-  --clr-tertiary: #ff6700;
+
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
@@ -74,10 +74,12 @@ svg {
 
 body {
   font-family: system-ui;
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
 }
 
 body a:link {
-  color: var(--clr-primary-accent);
+  color: var(--clr-secondary);
 }
 
 body a:visited {
@@ -90,13 +92,10 @@ main {
 
 #hero-section {
   width: 100%;
-  background: var(--clr-primary-accent);
 }
 
 header {
   padding: 1rem 1.5rem;
-  background: var(--clr-primary);
-  color: var(--clr-primary-accent);
   position: fixed;
   top: 0;
   width: 100%;
@@ -133,7 +132,6 @@ section {
 }
 
 #bio-section {
-  background-color: var(--clr-secondary);
 }
 
 #main-footer {
@@ -142,7 +140,6 @@ section {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background-color: var(--clr-tertiary);
 }
 
 .github-logo {
