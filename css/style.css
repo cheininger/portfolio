@@ -101,11 +101,6 @@ header {
   width: 100%;
 }
 
-h1,
-h2 {
-  font-family: "Subjectivity", "Josefin Sans", Verdana, Tahoma, sans-serif;
-}
-
 h1 {
   font-size: 3rem;
 }
